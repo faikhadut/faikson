@@ -38,3 +38,50 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+
+// Define a structure for developer
+struct Developer {
+    char name[50];
+    char alias[20];
+};
+
+// Function to print the name and alias of two developers
+void printDevelopers() {
+    // Create instances of the structure for two developers
+    struct Developer developer1 = {"John Doe", "JD"};
+    struct Developer developer2 = {"Jane Smith", "JS"};
+
+    // Print the name and alias of the first developer
+    printf("Developer 1:\n");
+    printf("Name: %s\n", developer1.name);
+    printf("Alias: %s\n\n", developer1.alias);
+
+    // Print the name and alias of the second developer
+    printf("Developer 2:\n");
+    printf("Name: %s\n", developer2.name);
+    printf("Alias: %s\n\n", developer2.alias);
+}
+
+int main() {
+    // Call the function to print the developers
+    printDevelopers();
+
+    return 0;
+}
